@@ -29,6 +29,12 @@ M.mason = {
   },
 }
 
+M.nvterm = {
+  terminals = {
+    shell = "nu",
+  }
+}
+
 -- git support in nvimtree
 M.nvimtree = {
   git = {
