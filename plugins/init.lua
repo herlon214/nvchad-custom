@@ -4,13 +4,13 @@ return {
   -- Enable dashboard
   ["goolord/alpha-nvim"] = { disable = false },
 
-  -- Override plugin definition options
-  ["neovim/nvim-lspconfig"] = {
-    config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.plugins.lspconfig"
-    end,
+  -- CoC NVIM
+  ["neoclide/coc.nvim"] = {
+    branch = "release",
   },
+
+  -- Disable lsp and cmp
+  ["neovim/nvim-lspconfig"] = false,
 
   -- overrde plugin configs
   ["nvim-treesitter/nvim-treesitter"] = {
