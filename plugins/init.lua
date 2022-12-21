@@ -4,6 +4,7 @@ return {
   -- Enable dashboard
   ["goolord/alpha-nvim"] = { disable = false },
 
+  -- LSP
   ["neovim/nvim-lspconfig"] = {
       config = function()
         require "plugins.configs.lspconfig"
@@ -17,6 +18,9 @@ return {
          require "custom.plugins.null-ls"
       end,
   },
+
+  -- Lightspeed motion
+  ["ggandor/lightspeed.nvim"] = {},
 
   -- overrde plugin configs
   ["nvim-treesitter/nvim-treesitter"] = {
